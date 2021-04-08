@@ -3,28 +3,22 @@ using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 
-//[RequireComponent(typeof(CharacterController))]
 public class MovementController : MonoBehaviour
 {
-    private CharacterController _characterController;
     private Rigidbody _rigidbody;
     private Camera _camera;
-    private float _movementX, _movementZ;
     private Vector3 _movement;
+    private Vector3 _movementDirection;
     private bool _jumped = false;
     private float _turnSmoothTime = 0.1f;
     private float _turnSmoothVelocity;
-    private Vector3 _movementDirection;
-    private Vector3 velocity;
 
-    [SerializeField] private float _movementSpeed = 6f;
-    [SerializeField] private float _gravity = -9.81f;
-    [SerializeField] private float _jumpHeight = 3f;
-    private float _jumpForce = 5f;
+
+    [SerializeField] private float _movementSpeed = 3f;
+    [SerializeField] private float _jumpForce = 5f;
 
     void Awake() 
     {
-        //_characterController = GetComponent<CharacterController>();
         _rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -62,7 +56,6 @@ public class MovementController : MonoBehaviour
         {
             _rigidbody.velocity = Vector2.up * _jumpForce;
             _jumped = false;
-            //_audioController.PlayJump();
         }
     }
 }
