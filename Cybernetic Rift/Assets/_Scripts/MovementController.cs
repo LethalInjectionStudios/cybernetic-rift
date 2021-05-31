@@ -7,16 +7,14 @@ public class MovementController : MonoBehaviour
 {
     private Rigidbody _rigidbody;
     private Camera _camera;
-    [SerializeField] private Vector3 _movement;
-    [SerializeField] Vector3 _rotation;
-    [SerializeField] private Vector3 _movementDirection;
+    private Vector3 _movement;
+    Vector3 _rotation;
+    private Vector3 _movementDirection;
     private bool _jumped = false;
     private float _turnSmoothTime = 0.1f;
     private float _turnSmoothVelocity;
-
-
-    [SerializeField] private float _movementSpeed = 15f;
-    [SerializeField] private float _jumpForce = 5f;
+     private float _movementSpeed = 7.5f;
+    private float _jumpForce = 5f;
 
     void Awake() 
     {
@@ -49,7 +47,7 @@ public class MovementController : MonoBehaviour
             float _angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, _angle, 0f);
             //_rigidbody.rotation = Quaternion.Euler(0f, _angle, 0f);
-            _movementDirection = Quaternion.Euler(0f, _targetAngle, 0f) * Vector3.forward * _movementSpeed;
+            _movementDirection = Quaternion.Euler(0f, _targetAngle, 0f) * Vector3.forward;
             transform.position += _movementDirection * Time.fixedDeltaTime * _movementSpeed;
             //_rigidbody.velocity = _movementDirection * Time.fixedDeltaTime * _movementSpeed;
         }
