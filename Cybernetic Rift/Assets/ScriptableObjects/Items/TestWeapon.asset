@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164405c2d9175784a9f8be47ccac4682, type: 3}
-  m_Name: New Item
+  m_Name: TestWeapon
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Test Weapon
+  description: This is a test weapon
   sprite: {fileID: 0}
-  model: {fileID: 0}
+  model: {fileID: 8570788470451812314, guid: 96c71cbc5e3f10f45af1ed1ff9731407, type: 3}
