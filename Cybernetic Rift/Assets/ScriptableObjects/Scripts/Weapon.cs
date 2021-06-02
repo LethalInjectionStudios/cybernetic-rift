@@ -9,4 +9,10 @@ public class Weapon : BaseItem
     {
         Debug.Log("Weapon Used");
     }
+
+    public override void UIInteract()
+    {
+        throw new System.NotImplementedException();
+    }
 }
+ 

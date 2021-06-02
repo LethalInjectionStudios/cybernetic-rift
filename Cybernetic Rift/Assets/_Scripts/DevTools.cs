@@ -10,7 +10,7 @@ public class DevTools : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I))
+        if(Input.GetKeyDown(KeyCode.M))
         {
             Pickup pickup = Instantiate(pickupPrefab);
             pickup.transform.position = new Vector3(0,0.5f,0);
