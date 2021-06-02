@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private BaseItem _itemData;
     private InventoryUI _inventoryUI;
     [SerializeField] private Pickup pickupPrefab;
+    //[SerializeField] private ItemDescriptionWindow descriptionWindow;
 
-    private void Start() {
+    private void Start() 
+    {
         _inventoryUI = GetComponentInParent<InventoryUI>();
     }
 
@@ -24,5 +27,15 @@ public class InventorySlot : MonoBehaviour
     public void LoadData(BaseItem item)
     {
         _itemData = item;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+         
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+         
     }
 }
