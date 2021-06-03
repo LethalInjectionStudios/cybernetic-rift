@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestLog : MonoBehaviour
 {
-    [SerializeField] private List<Quest> _questList;
+    private List<Quest> _questList;
 
     public void AddQuest(Quest quest)
     {
