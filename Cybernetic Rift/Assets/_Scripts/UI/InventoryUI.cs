@@ -38,5 +38,6 @@ public class InventoryUI : MonoBehaviour
     public void UpdateUI()
     {
         ClearUI();
+        PopulateInventory();
     }
 }

@@ -14,7 +14,8 @@ public class DevTools : MonoBehaviour
         {
             Pickup pickup = Instantiate(pickupPrefab);
             pickup.transform.position = new Vector3(0,0.5f,0);
-            pickup.LoadData(itemDB[0]);
+            int rand = Random.Range(0,2);
+            pickup.LoadData(itemDB[rand]);
         }
     }
 }
