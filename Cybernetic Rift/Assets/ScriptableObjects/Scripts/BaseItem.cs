@@ -10,5 +10,6 @@ public abstract class BaseItem : ScriptableObject
     public GameObject model;
 
     public abstract void Interact();
+    public abstract void UIInteract();
 
 }

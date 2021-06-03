@@ -28,7 +28,7 @@ public class Pickup : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Inventory>().inventory.Add(_itemData);
+            other.gameObject.GetComponent<Inventory>().AddItem(_itemData);
             Destroy(gameObject);
         }
     }
