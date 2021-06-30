@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InventoryUI
   - InventorySlots
+  - CamTarget
   layers:
   - Default
   - TransparentFX
