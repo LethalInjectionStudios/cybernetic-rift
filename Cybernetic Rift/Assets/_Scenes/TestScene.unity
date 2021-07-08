@@ -623,7 +623,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: da21a2e35f3f0b645b7964133dc21b84, type: 2}
   - {fileID: 11400000, guid: 2b6b043b17d4ceb4986282362bea4191, type: 2}
   questDB:
-  - {fileID: 11400000, guid: 05fd94bbb1addae41a7655f9dff4b3f5, type: 2}
+  - {fileID: 11400000, guid: 7c3cb615a73118b4b815341aa932dd4d, type: 2}
+  - {fileID: 11400000, guid: 2c95f8a5876060849ba085928d5e7c8c, type: 2}
   pickupPrefab: {fileID: 662599814537625492, guid: d72d6fe4ec51fab4ea280213a72375bd, type: 3}
 --- !u!114 &744698216
 MonoBehaviour:
@@ -1251,7 +1252,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1328,6 +1329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50cfc46911c1b8b49bf5e1e949efc94a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _inventorySlot: {fileID: 9118193961203952519, guid: a6c8bcbb40de58e4b91d7ab7e0714976, type: 3}
 --- !u!114 &1263579931
 MonoBehaviour:
   m_ObjectHideFlags: 0

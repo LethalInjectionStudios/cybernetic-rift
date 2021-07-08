@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f631daa8625474bade779303a4fac5, type: 3}
   m_Name: Test Quest 1
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Test Quest 1
+  description: Desc for TQ 1
