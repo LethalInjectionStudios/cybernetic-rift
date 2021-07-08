@@ -11,15 +11,9 @@ public class QuestLog : MonoBehaviour
         _questList.Add(quest);
     }
 
-    public void CompleteQuest(Quest quest)
+    public void CompleteQuest()
     {
-        foreach(Quest _quest in _questList )
-        {
-            if(_quest == quest)
-            {
-                _quest.isCompleted = true;
-            }
-        }
+        throw new System.NotImplementedException();
     }
 
     public List<Quest> GetQuestList()

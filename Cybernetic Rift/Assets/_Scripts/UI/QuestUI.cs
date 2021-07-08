@@ -23,6 +23,7 @@ public class QuestUI : MonoBehaviour
         {
             QuestSlot slot = Instantiate(_questSlot);
             slot.transform.SetParent(_questSlots.transform);
+            slot.LoadData(quest);
         }
     }
 

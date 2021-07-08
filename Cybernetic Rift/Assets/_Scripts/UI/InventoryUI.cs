@@ -7,7 +7,7 @@ public class InventoryUI : MonoBehaviour
 {
     private List<BaseItem> _playerInventory;
     private GameObject _inventorySlots;
-    private InventorySlot _inventorySlot;
+    [SerializeField] private InventorySlot _inventorySlot;
 
     private void OnEnable() 
     {

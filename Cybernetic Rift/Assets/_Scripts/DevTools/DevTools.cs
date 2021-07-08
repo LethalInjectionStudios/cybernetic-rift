@@ -5,7 +5,7 @@ using UnityEngine;
 public class DevTools : MonoBehaviour
 {
     public List<BaseItem> itemDB = new List<BaseItem>();
-    public List<Quest> questDB = new List<Quest>();
+    public List<QuestData> questDB = new List<QuestData>();
     public Pickup pickupPrefab;
 
     // Update is called once per frame
@@ -21,7 +21,10 @@ public class DevTools : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.N))
         {
-            GetComponent<QuestLog>().AddQuest(questDB[Random.Range(0, questDB.Count)]);
+            QuestData questData = questDB[Random.Range(0, questDB.Count)];
+            Quest quest = new Quest(questData);
+
+            GetComponent<QuestLog>().AddQuest(quest);
         }
     }
 }
