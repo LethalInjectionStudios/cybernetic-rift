@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestLog : MonoBehaviour
 {
-    private List<Quest> _questList;
+    private List<Quest> _questList = new List<Quest>();
 
     public void AddQuest(Quest quest)
     {

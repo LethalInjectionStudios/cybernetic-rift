@@ -6,12 +6,16 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     private GameObject _inventoryUI;
+    private GameObject _questUI;
     private bool isUIActive = false;
     
     void Start()
     {
         _inventoryUI = GameObject.FindGameObjectWithTag("InventoryUI");
         _inventoryUI.SetActive(false);
+
+        _questUI = GameObject.FindGameObjectWithTag("QuestUI");
+        _questUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,6 +24,7 @@ public class UIManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             _inventoryUI.SetActive(!_inventoryUI.activeSelf);
+            _questUI.SetActive(!_questUI.activeSelf);
             isUIActive = !isUIActive;        
         }
 
