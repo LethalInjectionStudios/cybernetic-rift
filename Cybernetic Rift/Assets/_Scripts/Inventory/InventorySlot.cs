@@ -8,6 +8,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private BaseItem _itemData;
     private InventoryUI _inventoryUI;
     [SerializeField] private Pickup pickupPrefab;
+    [SerializeField] private EquippedItem equippedItemPrefab;
     //[SerializeField] private ItemDescriptionWindow descriptionWindow;
 
     private void Start() 
@@ -31,7 +32,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-         
+
     }
 
     public void OnPointerExit(PointerEventData eventData)

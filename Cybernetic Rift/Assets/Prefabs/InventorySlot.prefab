@@ -419,3 +419,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupPrefab: {fileID: 662599814537625492, guid: d72d6fe4ec51fab4ea280213a72375bd, type: 3}
+  equippedItemPrefab: {fileID: 2445200926105861758, guid: eee19ef1499f8664b8ceee342259edf7, type: 3}
