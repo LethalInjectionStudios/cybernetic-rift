@@ -15,11 +15,11 @@ public class Quest
 
     public string Title
     {
-        get { return _title; }
+        get => _title;
     }
 
     public string Description
     {
-        get { return _description; }
+        get => _description;
     }
 }

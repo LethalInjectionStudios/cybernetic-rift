@@ -25,10 +25,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         _inventoryUI.UpdateUI();
     }
 
-    public void LoadData(BaseItem item)
-    {
-        _itemData = item;
-    }
+    public void LoadData(BaseItem item) => _itemData = item;
 
     public void OnPointerEnter(PointerEventData eventData)
     {

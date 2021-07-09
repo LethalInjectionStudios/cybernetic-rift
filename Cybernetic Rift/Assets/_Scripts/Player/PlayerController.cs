@@ -10,12 +10,12 @@ public class PlayerController : MonoBehaviour
 
     public int Health
     {
-        get{ return _health; }
+        get => _health;
     }
 
     public int Exp
     {
-        get { return _exp; }
+        get => _exp;
     }
 
     void Start()
@@ -35,8 +35,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void EquipItem(BaseItem item, EquippedItem itemObject)
-    {
-        _equippedItem = item;
-    }
+    public void EquipItem(BaseItem item, EquippedItem itemObject) =>  _equippedItem = item;
 }
