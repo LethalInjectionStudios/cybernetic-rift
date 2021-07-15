@@ -15,6 +15,7 @@ public class DEV_MovementController : MonoBehaviour
     private float _jumpForce = 5f;
     private float minRotation = -45f;
     private float maxRotation = 30f;
+    private float _rotateSpeed = 2.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +28,8 @@ public class DEV_MovementController : MonoBehaviour
     void Update()
     {
         _movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0 , Input.GetAxisRaw("Vertical")).normalized;
-        _rotation = new Vector3(0, Input.GetAxisRaw("Mouse X"), 0);
-        _camRotation = new Vector3(-Input.GetAxisRaw("Mouse Y"), 0, 0);
+        _rotation = new Vector3(0, Input.GetAxisRaw("Mouse X") * _rotateSpeed, 0);
+        _camRotation = new Vector3(-Input.GetAxisRaw("Mouse Y") * _rotateSpeed, 0, 0);
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
